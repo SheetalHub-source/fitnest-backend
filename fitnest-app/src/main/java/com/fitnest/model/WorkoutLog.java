@@ -34,7 +34,7 @@ public class WorkoutLog extends Auditable {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private UserProfile user;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "workout_plan_id")

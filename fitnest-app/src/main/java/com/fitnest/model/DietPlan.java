@@ -40,5 +40,5 @@ public class DietPlan extends Auditable {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "trainer_id", nullable = false)
-    private Trainer trainer;
+    private TrainerProfile trainer;
 }

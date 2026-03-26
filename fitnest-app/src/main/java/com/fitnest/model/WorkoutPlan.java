@@ -37,7 +37,7 @@ public class WorkoutPlan extends Auditable {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "trainer_id", nullable = false)
-    private Trainer trainer;
+    private TrainerProfile trainer;
 
     @OneToMany(mappedBy = "workoutPlan", fetch = FetchType.LAZY)
     private List<WorkoutLog> workoutLogs;
